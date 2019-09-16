@@ -1,14 +1,6 @@
 from helper import WehiGlobusApiHelper
 import globus_sdk as globus
-
-#-----------------------------------------------------------------------------
-# You need to edit these for your use case!
-#
-# The source EP is where the data is coming. Your provider will give you that
-SOURCE_ENDPOINT_ID      = 'ddb59aef-6d04-11e5-ba46-22000b92c6ec'
-# Create your own EP using the globus CLI
-DESTINATION_ENDPOINT_ID = 'a7552630-d2a3-11e9-98e2-0a63aa6b37da'
-#-----------------------------------------------------------------------------
+from config import SOURCE_ENDPOINT_ID, DESTINATION_ENDPOINT_ID
 
 def main():
   helper = WehiGlobusApiHelper()

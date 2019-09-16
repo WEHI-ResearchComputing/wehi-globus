@@ -8,9 +8,9 @@
 # Setup your python enviroment. This may be a virtual env or a conda
 module load python/3.7.0
 
-##python globus-single-download.py $1
+python globus-single-file-download.py --globus-path $1 --file $2
 
-#if [ $? == "0" ]
-#do
-  ./process.sh $1
-#fi
+if [ $? == "0" ]
+then
+  ./process.sh $2
+fi
