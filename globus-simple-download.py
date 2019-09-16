@@ -33,12 +33,16 @@ def main():
   completed = tc.task_wait(transfer_result["task_id"], timeout=60, polling_interval=15)
   if completed:
       print("Task finished!")
+      rc = 0
   else:
       print("Task still running after timeout reached.")
+      rc = 1
 
   # Print details of the task execution
   r = tc.get_task(transfer_result['task_id'])
   print(r)
 
+  return rc
+
 if __name__ == '__main__':
-  main()
+  quit(main())
