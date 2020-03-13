@@ -3,9 +3,13 @@
 This a lightweight skeleton project for programmatic Globus downloads.
 
 ## Prerequisite tasks
-1. Create a python environment and install the prequisites. Only a couple of packages are required so installing in your user area is fine. Otherwise use a virtual environment. Python 3.7 or higher is required.
-2. Setup [Globus Connect Personal](https://www.globus.org/globus-connect-personal) (GCP) to service your endpoint. This needs to be done interactively the first time but can there after run in the background or even in the batch system.
-3. Login using the `globus-login.py` script. This also needs to be done interactively the login tokens should last 6 months. Look in `helper.py` for more details. This is different to the Globus CLI in that different authorisation tokens are acquired. These tokens should be kept confidential.
+1. Create a python environment and install the perquisites. Only a couple of packages are required so installing in your 
+user area is fine. Otherwise use a virtual environment. Python 3.7 or higher is required.
+2. Setup [Globus Connect Personal](https://www.globus.org/globus-connect-personal) (GCP) to service your endpoint. This 
+needs to be done interactively the first time but can there after run in the background or even in the batch system.
+3. Login using the `globus-login.py` script. This also needs to be done interactively the login tokens should last 6 
+months. Look in `helper.py` for more details. This is different to the Globus CLI in that different authorisation tokens 
+are acquired. These tokens should be kept confidential.
 4. Edit the `config.py` to match your requirements.
 
 ## Simple downloads
